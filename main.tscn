@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cepdfkerw4cpw"]
+[gd_scene load_steps=2 format=3 uid="uid://cepdfkerw4cpw"]
+
+[sub_resource type="TileSet" id="TileSet_ud7sn"]
+physics_layer_0/collision_layer = 1
 
 [node name="Main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ud7sn")
+format = 2
+layer_0/name = "Background"
+layer_1/name = "Top"
+layer_1/tile_data = PackedInt32Array()
